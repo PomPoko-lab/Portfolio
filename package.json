@@ -1,6 +1,6 @@
 {
   "name": "pom-poko-one",
-  "homepage": "https://pompoko-lab.github.io/portfolio",
+  "homepage": "https://pompoko-lab.github.io",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
