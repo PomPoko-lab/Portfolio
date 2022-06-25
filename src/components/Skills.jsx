@@ -1,4 +1,4 @@
-import { Container, Center, Image, SlideFade, Fade } from '@chakra-ui/react';
+import { Container, Center, Image, SlideFade } from '@chakra-ui/react';
 
 import logoBootStrap from '../assets/logoBoostrap.svg';
 import logoChakraUI from '../assets/logoChakraUI.svg';

@@ -5,7 +5,8 @@ const BackgroundBox = () => {
     <Box
       position='absolute'
       w='100vw'
-      h='100vh'
+      // h='100vh'
+      h={`${window.innerHeight}px`}
       zIndex='-1'
       bgColor='#d9fcf5'
     />

@@ -23,7 +23,8 @@ function App() {
           left='50%'
           top='50%'
           transform='translate(-50%, -50%)'
-          h='100vh'
+          // h='100vh'
+          h={`${window.innerHeight}px`} // Some new magic
           objectFit='cover'
           src={bg}
           alt='beautiful blue skies'
