@@ -29,7 +29,7 @@ const MyInfo = ({ initAnimation }) => {
           display='flex'
           flexDirection='column'
           textAlign='center'
-          background='linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.7))'
+          background='linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.6))'
           border='1px solid white'
           shadow='lg'
           borderRadius='md'

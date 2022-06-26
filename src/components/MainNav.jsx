@@ -21,7 +21,6 @@ const MainNav = ({ setCurrentPage }) => {
         <UnorderedList
           mx='auto'
           display='flex'
-          justifyContent={['space-between', 'flex-start']}
           alignItems='center'
           styleType='none'
           maxW='container.xl'
@@ -66,7 +65,7 @@ const MainNav = ({ setCurrentPage }) => {
               About
             </Link>
           </ListItem>
-          <ListItem ms='auto' me='5'>
+          <ListItem ms='auto' me={['0', '5']}>
             <Link
               color='white'
               backgroundColor='orange.300'
