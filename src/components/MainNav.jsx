@@ -8,7 +8,7 @@ import {
 
 const MainNav = ({ setCurrentPage }) => {
   return (
-    <Container as='nav' maxW='container.xl' py='2' mt={['4', '10']}>
+    <Container as='nav' maxW='container.xl' py='2' mt={['4', '6']}>
       <SlideFade
         in
         offsetY='-40px'

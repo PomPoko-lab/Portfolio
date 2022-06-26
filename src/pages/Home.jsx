@@ -8,7 +8,7 @@ const MyInfo = () => {
       <Container
         p='0'
         as='main'
-        mt='15em'
+        mt='18em'
         display='flex'
         flexDirection='column'
         textAlign='center'
