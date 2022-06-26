@@ -4,11 +4,14 @@ import {
   ListItem,
   Link,
   SlideFade,
+  Image,
 } from '@chakra-ui/react';
+
+import pomImg from '../assets/RosePomMain.jpg';
 
 const MainNav = ({ setCurrentPage }) => {
   return (
-    <Container as='nav' maxW='container.xl' py='2' mt={['4', '6']}>
+    <Container as='nav' maxW='container.xl' mt='5'>
       <SlideFade
         in
         offsetY='-40px'
@@ -19,10 +22,10 @@ const MainNav = ({ setCurrentPage }) => {
           mx='auto'
           display='flex'
           justifyContent={['space-between', 'flex-start']}
+          alignItems='center'
           styleType='none'
           maxW='container.xl'
-          letterSpacing='wider'
-          color='teal.500'
+          color='gray.600'
           fontSize='lg'
         >
           <ListItem>
@@ -32,7 +35,7 @@ const MainNav = ({ setCurrentPage }) => {
               py={['2', '3']}
               borderRadius='lg'
               _hover={{
-                color: 'teal.300',
+                color: 'orange.300',
                 background:
                   'linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.5))',
               }}
@@ -51,7 +54,7 @@ const MainNav = ({ setCurrentPage }) => {
               py={['2', '3']}
               borderRadius='lg'
               _hover={{
-                color: 'teal.300',
+                color: 'orange.300',
                 background:
                   'linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.5))',
               }}
@@ -63,17 +66,17 @@ const MainNav = ({ setCurrentPage }) => {
               About
             </Link>
           </ListItem>
-          <ListItem ms='auto'>
+          <ListItem ms='auto' me='5'>
             <Link
-              color='gray.100'
-              backgroundColor='teal.300'
+              color='white'
+              backgroundColor='orange.300'
               transition='all 200ms ease'
-              px={['4', '6']}
-              py={['2', '3']}
+              px='6'
+              py='3'
               borderRadius='lg'
+              shadow='base'
               _hover={{
                 filter: 'brightness(1.1)',
-                scale: '1.2',
               }}
               style={{ textDecoration: 'none' }}
               onClick={() => {
@@ -83,6 +86,18 @@ const MainNav = ({ setCurrentPage }) => {
               Projects
             </Link>
           </ListItem>
+          <Image
+            my='auto'
+            p='1px'
+            display={['none', 'block']}
+            objectFit='cover'
+            boxSize='50px'
+            src={pomImg}
+            alt='Pom Poko Ava'
+            borderRadius='50em'
+            border='2px solid'
+            borderColor='orange.100'
+          />
         </UnorderedList>
       </SlideFade>
     </Container>

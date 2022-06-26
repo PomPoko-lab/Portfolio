@@ -1,27 +1,56 @@
-import { Container, Image, Heading, Text, Box, Fade } from '@chakra-ui/react';
+import {
+  Container,
+  Image,
+  Heading,
+  Text,
+  Box,
+  Center,
+  SlideFade,
+} from '@chakra-ui/react';
 
-import pomImg from '../assets/RosePomMain.jpg';
+import { EmailIcon } from '@chakra-ui/icons';
 
-const MyInfo = () => {
+import myImg from '../assets/MeCropped.jpg';
+
+const MyInfo = ({ initAnimation }) => {
   return (
     <>
-      <Container
-        p='0'
-        as='main'
-        mt='18em'
-        display='flex'
-        flexDirection='column'
-        textAlign='center'
+      <SlideFade
+        in={initAnimation}
+        offsetY='-15px'
+        transition={{ enter: { duration: 0.5 } }}
+        unmountOnExit
       >
-        <Fade
-          in
-          transition={{ enter: { duration: 0.4, delay: 0.2 } }}
-          unmountOnExit
+        <Container
+          as='main'
+          p='6'
+          mt='12em'
+          mb='5em'
+          display='flex'
+          flexDirection='column'
+          textAlign='center'
+          background='linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.7))'
+          border='1px solid white'
+          shadow='lg'
+          borderRadius='md'
         >
+          <Image
+            mx='auto'
+            mb='4'
+            p='2'
+            objectFit='cover'
+            boxSize={['130px', '150px']}
+            src={myImg}
+            alt='Picture of me'
+            borderRadius='50em'
+            border='2px solid'
+            borderColor='orange.100'
+          />
+
           <Heading
             as='h1'
             letterSpacing='wide'
-            color='teal.800'
+            color='gray.700'
             fontSize={['3xl', null, null, '4xl']}
             mb='4'
           >
@@ -30,49 +59,50 @@ const MyInfo = () => {
           <Box
             display='flex'
             mx='auto'
-            gap={['4', '6', '10']}
-            mb='4'
+            gap={['4', '6', '8']}
             justifyContent='center'
           >
-            <Text letterSpacing='wider' color='teal.300' fontSize='md'>
-              WEB DEVELOPER
+            <Text color='gray.600' fontSize='lg'>
+              Web Developer
             </Text>
-            <Text letterSpacing='wider' color='teal.500' fontSize='md'>
+            <Text color='gray.700' fontSize='lg'>
               |
             </Text>
-            <Text letterSpacing='wider' color='teal.300' fontSize='md'>
-              BUSINESS OWNER
+            <Text color='gray.600' fontSize='lg'>
+              Business Owner
             </Text>
           </Box>
-        </Fade>
-        <Fade
-          in
-          transition={{ enter: { duration: 0.4, delay: 0.5 } }}
-          unmountOnExit
-        >
-          <Text letterSpacing='widest' color='teal.500' mb='3em' fontSize='sm'>
-            hello@pompoko.io
-          </Text>
-        </Fade>
-        <Fade
-          in
-          transition={{
-            enter: { duration: 0.6, delay: 0.7 },
+        </Container>
+      </SlideFade>
+      <SlideFade
+        in={initAnimation}
+        offsetY='-15px'
+        transition={{ enter: { duration: 0.5, delay: 0.4 } }}
+        unmountOnExit
+      >
+        <Box
+          display='flex'
+          gap='2'
+          color='white'
+          justifyContent='center'
+          backgroundColor='orange.300'
+          transition='all 200ms ease'
+          width={['300px', 'auto']}
+          px='6'
+          py='3'
+          borderRadius='lg'
+          shadow='base'
+          _hover={{
+            filter: 'brightness(1.1)',
+            cursor: 'pointer',
           }}
-          unmountOnExit
         >
-          <Image
-            mx='auto'
-            mb='2'
-            maxW={['150px', null, null, null, null, '200px']}
-            objectFit='contain'
-            objectPosition='bottom'
-            src={pomImg}
-            alt='image of a racoon eating a tomato'
-            borderRadius='10px'
-          />
-        </Fade>
-      </Container>
+          <Center>
+            <EmailIcon />
+          </Center>
+          <Text>hello@pompoko.io</Text>
+        </Box>
+      </SlideFade>
     </>
   );
 };

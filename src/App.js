@@ -1,5 +1,5 @@
 import { Box, Image } from '@chakra-ui/react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import bg from './assets/bg.jpg';
 
@@ -12,6 +12,13 @@ import AboutMe from './pages/AboutMe';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('Home');
+  const [initAnimation, setInitAnimation] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setInitAnimation(true);
+    }, 1000);
+  }, []);
 
   return (
     <>
@@ -21,6 +28,7 @@ function App() {
         display='flex'
         flexDirection='column'
         alignItems='center'
+        px='4'
       >
         <Image
           zIndex='-1'
@@ -35,7 +43,7 @@ function App() {
           alt='beautiful blue skies'
         />
         <MainNav setCurrentPage={setCurrentPage} />
-        {currentPage === 'Home' && <Home />}
+        {currentPage === 'Home' && <Home initAnimation={initAnimation} />}
         {currentPage === 'AboutMe' && <AboutMe />}
         <Footer />
       </Box>

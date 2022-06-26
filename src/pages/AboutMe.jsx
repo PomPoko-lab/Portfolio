@@ -8,7 +8,7 @@ const AboutMe = () => {
         py='3'
         borderBottom='1px solid white'
         letterSpacing='wide'
-        color='teal.800'
+        color='gray.700'
         fontSize={['3xl', null, null, '4xl']}
         mb='6'
         mt={['3em', 'null', '5em']}
@@ -31,7 +31,7 @@ const AboutMe = () => {
         <Text
           p='6'
           background='linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.6))'
-          color='teal.900'
+          color='gray.700'
           border='1px solid white'
           shadow='lg'
           borderRadius='md'
