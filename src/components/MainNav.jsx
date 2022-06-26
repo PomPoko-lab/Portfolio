@@ -13,7 +13,7 @@ const MainNav = ({ setCurrentPage }) => {
       maxW='container.xl'
       py='2'
       mt='10'
-      mb={['5em', null, null, null, '10em']}
+      mb={['15em', null, null, null, '15em']}
     >
       <SlideFade
         in
@@ -34,8 +34,8 @@ const MainNav = ({ setCurrentPage }) => {
           <ListItem>
             <Link
               transition='all 300ms ease'
-              px='6'
-              py='3'
+              px={['4', '6']}
+              py={['2', '3']}
               borderRadius='lg'
               _hover={{
                 color: 'teal.300',
@@ -53,8 +53,8 @@ const MainNav = ({ setCurrentPage }) => {
           <ListItem>
             <Link
               transition='all 200ms ease'
-              px='6'
-              py='3'
+              px={['4', '6']}
+              py={['2', '3']}
               borderRadius='lg'
               _hover={{
                 color: 'teal.300',
@@ -74,8 +74,8 @@ const MainNav = ({ setCurrentPage }) => {
               color='gray.100'
               backgroundColor='teal.300'
               transition='all 200ms ease'
-              px='6'
-              py='3'
+              px={['4', '6']}
+              py={['2', '3']}
               borderRadius='lg'
               _hover={{
                 filter: 'brightness(1.1)',

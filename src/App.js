@@ -16,7 +16,12 @@ function App() {
   return (
     <>
       <BackgroundBox />
-      <Box h='100vh' display='flex' flexDirection='column' alignItems='center'>
+      <Box
+        h={`${window.innerHeight}px`}
+        display='flex'
+        flexDirection='column'
+        alignItems='center'
+      >
         <Image
           zIndex='-1'
           position='absolute'
