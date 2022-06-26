@@ -11,6 +11,7 @@ const AboutMe = () => {
         color='teal.800'
         fontSize={['3xl', null, null, '4xl']}
         mb='6'
+        mt={['3em', 'null', '5em']}
       >
         <SlideFade
           in
