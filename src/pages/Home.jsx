@@ -23,7 +23,7 @@ const MyInfo = ({ initAnimation }) => {
         <Container
           as='main'
           p='6'
-          mt={['15em', '17em']}
+          mt={['14em', '17em']}
           mb='4em'
           display='flex'
           flexDirection='column'

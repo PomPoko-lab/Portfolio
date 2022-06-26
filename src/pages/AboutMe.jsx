@@ -28,10 +28,10 @@ const AboutMe = () => {
           <Image
             mx='auto'
             p='1'
-            mb='3'
+            mb={['0', '3']}
             objectFit='cover'
-            display={['none', 'block']}
-            boxSize='150px'
+            display='block'
+            boxSize={['100px', '150px']}
             src={myImg}
             alt='Picture of me'
             borderRadius='50em'
@@ -40,7 +40,6 @@ const AboutMe = () => {
           />
 
           <Heading
-            mt={['30px', '0']}
             as='h2'
             letterSpacing='wide'
             color='gray.700'
