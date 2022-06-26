@@ -27,30 +27,28 @@ const MainNav = ({ setCurrentPage }) => {
           color='gray.600'
           fontSize='lg'
         >
-          <ListItem>
-            <Link
-              transition='all 300ms ease'
-              px={['4', '6']}
-              py={['2', '3']}
-              borderRadius='lg'
-              _hover={{
-                color: 'orange.300',
-                background:
-                  'linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.5))',
-              }}
-              style={{ textDecoration: 'none' }}
+          <ListItem me='auto'>
+            <Image
+              my='auto'
+              p='1px'
+              objectFit='cover'
+              boxSize='50px'
+              src={pomImg}
+              alt='Pom Poko Ava'
+              borderRadius='50em'
+              border='2px solid'
+              borderColor='orange.100'
               onClick={() => {
                 setCurrentPage('Home');
               }}
-            >
-              Home
-            </Link>
+              _hover={{ cursor: 'pointer' }}
+            />
           </ListItem>
           <ListItem>
             <Link
               transition='all 200ms ease'
-              px={['4', '6']}
-              py={['2', '3']}
+              px={['2', '6']}
+              py={['1', '3']}
               borderRadius='lg'
               _hover={{
                 color: 'orange.300',
@@ -65,17 +63,16 @@ const MainNav = ({ setCurrentPage }) => {
               About
             </Link>
           </ListItem>
-          <ListItem ms='auto' me={['0', '5']}>
+          <ListItem>
             <Link
-              color='white'
-              backgroundColor='orange.300'
               transition='all 200ms ease'
-              px='6'
-              py='3'
+              px={['2', '6']}
+              py={['1', '3']}
               borderRadius='lg'
-              shadow='base'
               _hover={{
-                filter: 'brightness(1.1)',
+                color: 'orange.300',
+                background:
+                  'linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.5))',
               }}
               style={{ textDecoration: 'none' }}
               onClick={() => {
@@ -85,18 +82,6 @@ const MainNav = ({ setCurrentPage }) => {
               Projects
             </Link>
           </ListItem>
-          <Image
-            my='auto'
-            p='1px'
-            display={['none', 'block']}
-            objectFit='cover'
-            boxSize='50px'
-            src={pomImg}
-            alt='Pom Poko Ava'
-            borderRadius='50em'
-            border='2px solid'
-            borderColor='orange.100'
-          />
         </UnorderedList>
       </SlideFade>
     </Container>

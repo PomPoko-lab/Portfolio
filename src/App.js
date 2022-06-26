@@ -9,6 +9,7 @@ import BackgroundBox from './components/BackgroundBox';
 import Home from './pages/Home';
 import Footer from './components/Footer';
 import AboutMe from './pages/AboutMe';
+import Projects from './pages/Projects';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -45,6 +46,7 @@ function App() {
         <MainNav setCurrentPage={setCurrentPage} />
         {currentPage === 'Home' && <Home initAnimation={initAnimation} />}
         {currentPage === 'AboutMe' && <AboutMe />}
+        {currentPage === 'Projects' && <Projects />}
         <Footer />
       </Box>
     </>

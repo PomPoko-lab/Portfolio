@@ -1,16 +1,15 @@
 import {
   Container,
-  Image,
   Heading,
   Text,
+  Link,
   Box,
+  Icon,
   Center,
   SlideFade,
 } from '@chakra-ui/react';
 
-import { EmailIcon } from '@chakra-ui/icons';
-
-import myImg from '../assets/MeCropped.jpg';
+import { AiFillMail } from 'react-icons/ai';
 
 const MyInfo = ({ initAnimation }) => {
   return (
@@ -24,49 +23,30 @@ const MyInfo = ({ initAnimation }) => {
         <Container
           as='main'
           p='6'
-          mt='12em'
-          mb='5em'
+          mt={['15em', '17em']}
+          mb='4em'
           display='flex'
           flexDirection='column'
           textAlign='center'
-          background='linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.6))'
-          border='1px solid white'
-          shadow='lg'
-          borderRadius='md'
         >
-          <Image
-            mx='auto'
-            mb='4'
-            p='2'
-            objectFit='cover'
-            boxSize={['130px', '150px']}
-            src={myImg}
-            alt='Picture of me'
-            borderRadius='50em'
-            border='2px solid'
-            borderColor='orange.100'
-          />
-
           <Heading
             as='h1'
             letterSpacing='wide'
             color='gray.700'
             fontSize={['3xl', null, null, '4xl']}
-            mb='4'
+            mb='6'
           >
             Kenny Cao
           </Heading>
           <Box
             display='flex'
             mx='auto'
-            gap={['4', '6', '8']}
+            gap={['3', '5', '6']}
+            mb='5'
             justifyContent='center'
           >
             <Text color='gray.600' fontSize='lg'>
               Web Developer
-            </Text>
-            <Text color='gray.700' fontSize='lg'>
-              |
             </Text>
             <Text color='gray.600' fontSize='lg'>
               Business Owner
@@ -80,14 +60,15 @@ const MyInfo = ({ initAnimation }) => {
         transition={{ enter: { duration: 0.5, delay: 0.4 } }}
         unmountOnExit
       >
-        <Box
+        <Link
+          href='mailto:hello@pompoko.io'
           display='flex'
           gap='2'
           color='white'
           justifyContent='center'
           backgroundColor='orange.300'
           transition='all 200ms ease'
-          width={['300px', 'auto']}
+          width={['250px', 'auto']}
           px='6'
           py='3'
           borderRadius='lg'
@@ -98,10 +79,10 @@ const MyInfo = ({ initAnimation }) => {
           }}
         >
           <Center>
-            <EmailIcon />
+            <Icon as={AiFillMail} />
           </Center>
           <Text>hello@pompoko.io</Text>
-        </Box>
+        </Link>
       </SlideFade>
     </>
   );
