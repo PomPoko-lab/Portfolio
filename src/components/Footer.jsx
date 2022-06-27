@@ -19,7 +19,7 @@ const Footer = () => {
       alignItems='center'
       maxW='container.md'
     >
-      <Center gap={['2', '3', '6', '10']} me={['0', null, 'auto']}>
+      <Center as='section' gap={['2', '3', '6', '10']} me={['0', null, 'auto']}>
         <Link>
           <Icon as={AiOutlineLinkedin} boxSize='30px' color='teal.100' />
         </Link>
