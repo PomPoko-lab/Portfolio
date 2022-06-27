@@ -42,7 +42,7 @@ const Carousel = ({ slides }) => {
     ml: `-${currentSlide * 100}%`,
   };
   return (
-    <Flex w='100%' alignItems='center' justifyContent='center'>
+    <Flex as='section' w='100%' alignItems='center' justifyContent='center'>
       <Flex w={['300px', null, null, '850px']} overflow='hidden' pos='relative'>
         <Flex {...carouselStyle}>
           {slides.map((item) => (

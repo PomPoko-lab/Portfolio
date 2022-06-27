@@ -4,6 +4,7 @@ import { AiFillGithub, AiFillFolderOpen } from 'react-icons/ai';
 const ProjectItem = ({ project }) => {
   return (
     <Box
+      as='article'
       color='gray.700'
       background='linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.7))'
       border='1px solid white'
@@ -24,6 +25,7 @@ const ProjectItem = ({ project }) => {
         src={`${process.env.PUBLIC_URL}${project.imgSrc}`}
       />
       <Box
+        as='section'
         display='flex'
         flexDirection='column'
         p='5'

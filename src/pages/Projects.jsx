@@ -5,7 +5,7 @@ import Carousel from '../components/Carousel';
 const Projects = () => {
   return (
     <Container
-      as='section'
+      as='main'
       textAlign='center'
       maxW='container.lg'
       p={['0', null, 'auto']}
@@ -17,6 +17,7 @@ const Projects = () => {
         unmountOnExit
       >
         <Box
+          as='section'
           py='1'
           borderBottom='1px solid white'
           mb='6'

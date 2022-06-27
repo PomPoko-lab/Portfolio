@@ -17,7 +17,7 @@ import bibiImg from '../assets/Bibi.jpg';
 
 const AboutMe = () => {
   return (
-    <Container as='section' textAlign='center'>
+    <Container as='main' textAlign='center'>
       <SlideFade
         in
         offsetY='-15px'
@@ -25,6 +25,7 @@ const AboutMe = () => {
         unmountOnExit
       >
         <Box
+          as='section'
           py='1'
           borderBottom='1px solid white'
           mb='6'
@@ -61,6 +62,7 @@ const AboutMe = () => {
         unmountOnExit
       >
         <Box
+          as='section'
           color='gray.700'
           p='6'
           pb='4'

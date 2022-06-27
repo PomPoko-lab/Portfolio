@@ -39,6 +39,7 @@ const MyInfo = ({ initAnimation }) => {
             Kenny Cao
           </Heading>
           <Box
+            as='section'
             display='flex'
             mx='auto'
             gap={['3', '5', '6']}
