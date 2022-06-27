@@ -15,11 +15,9 @@ const ProjectItem = ({ project }) => {
       w={['300px', null, null, '850px']}
       textAlign='left'
       overflow='hidden'
-      maxH='500px'
     >
       <Image
         w='500px'
-        h={['300px', null, null, 'auto']}
         objectFit='cover'
         objectPosition='center'
         src={`${process.env.PUBLIC_URL}${project.imgSrc}`}
