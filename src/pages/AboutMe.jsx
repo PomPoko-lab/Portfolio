@@ -19,7 +19,6 @@ const AboutMe = () => {
   return (
     <Container as='section' textAlign='center'>
       <SlideFade
-        style={{ marginTop: '3em' }}
         in
         offsetY='-15px'
         transition={{ enter: { duration: 0.5 } }}
@@ -29,7 +28,7 @@ const AboutMe = () => {
           py='1'
           borderBottom='1px solid white'
           mb='6'
-          mt={['3em', 'null', '5em']}
+          mt={['1em', null, '3em']}
         >
           <Image
             mx='auto'

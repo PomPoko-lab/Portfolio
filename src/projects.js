@@ -21,6 +21,17 @@ const projects = [
     src: 'https://github.com/PomPoko-lab/pompoko-lab.github.io',
     demo: 'https://pompoko.io/',
   },
+  {
+    id: 3,
+    title: 'Lost Ark Tools',
+    desc: "My intro to JS personal project. After Lost Ark NA's (PC Game) initial launch, these tools were created to assist me in daily gaming chores. Features a daily tracker and in-game currency shop calculator.",
+    imgSrc: '/assets/lostarktools.webp',
+    designer: 'Pom Poko',
+    coder: 'Pom Poko',
+    techs: ['HTML', 'CSS', 'JS'],
+    src: 'https://github.com/PomPoko-lab/lost-ark-tools',
+    demo: 'https://pompoko.io/lost-ark-tools/',
+  },
 ];
 
 export default projects;

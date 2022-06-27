@@ -3,7 +3,7 @@ import { Box } from '@chakra-ui/react';
 const BackgroundBox = () => {
   return (
     <Box
-      position='absolute'
+      position='fixed'
       w='100vw'
       // h='100vh'
       h={`${window.innerHeight}px`}

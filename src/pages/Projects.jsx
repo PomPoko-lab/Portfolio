@@ -11,13 +11,17 @@ const Projects = () => {
       p={['0', null, 'auto']}
     >
       <SlideFade
-        style={{ marginTop: '3em' }}
         in
         offsetY='-15px'
         transition={{ enter: { duration: 0.5 } }}
         unmountOnExit
       >
-        <Box py='1' borderBottom='1px solid white' mb='6'>
+        <Box
+          py='1'
+          borderBottom='1px solid white'
+          mb='6'
+          mt={['1em', null, '3em']}
+        >
           <Heading
             as='h2'
             letterSpacing='wide'
