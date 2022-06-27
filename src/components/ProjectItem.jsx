@@ -66,12 +66,13 @@ const ProjectItem = ({ project }) => {
             {project.techs.map((item) => (
               <Text
                 color='whiteAlpha.800'
-                background='orange.600'
+                background='orange.300'
                 borderRadius='lg'
                 display='inline'
                 fontSize='sm'
                 py='1'
                 px='2'
+                shadow='base'
               >
                 {item}
               </Text>

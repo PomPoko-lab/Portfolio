@@ -4,10 +4,16 @@ import {
   Heading,
   Text,
   Image,
+  Link,
+  Center,
+  Icon,
   SlideFade,
 } from '@chakra-ui/react';
 
+import { AiOutlineFilePdf } from 'react-icons/ai';
+
 import myImg from '../assets/MeCropped.jpg';
+import bibiImg from '../assets/Bibi.jpg';
 
 const AboutMe = () => {
   return (
@@ -58,20 +64,63 @@ const AboutMe = () => {
         <Box
           color='gray.700'
           p='6'
+          pb='4'
           background='linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.6))'
           border='1px solid white'
           shadow='lg'
           borderRadius='md'
         >
-          <Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nisi
-            sint iure nihil ut exercitationem at. Minus, incidunt laborum
-            voluptatum voluptas quibusdam eius non, omnis, molestiae vero
-            tempora autem ratione. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Aut, exercitationem id enim eaque accusamus
-            debitis similique minus corporis pariatur. Iure mollitia
-            voluptatibus ratione nostrum adipisci ex quam natus in quos!
+          <Text mb='2'>
+            Hello! I'm Kenny, a dog-loving, racoon-loving, business owner who
+            enjoys gaming and programming. My long-term ambition is game server
+            development. Currently, I am specializing in web development
+            utilizing React and its vast ecosystem.
           </Text>
+          <Text mb='2'>For more information, have a look at my resume (:</Text>
+          <Link
+            href={`${process.env.PUBLIC_URL}/assets/Kenny_Cao_ResumeUpdated06-26-22.pdf`}
+            download
+            style={{ textDecoration: 'none' }}
+          >
+            <Center
+              mx='auto'
+              mb='4'
+              display='flex'
+              gap='2'
+              color='white'
+              justifyContent='center'
+              backgroundColor='orange.300'
+              transition='all 200ms ease'
+              width={['auto', '100px']}
+              px='6'
+              py='2'
+              borderRadius='lg'
+              shadow='base'
+              _hover={{
+                filter: 'brightness(1.1)',
+                cursor: 'pointer',
+              }}
+            >
+              <Icon as={AiOutlineFilePdf} />
+              <Text>Resume</Text>
+            </Center>
+          </Link>
+
+          <Text textAlign='center' fontWeight='bold' fontsize='md' mb='3'>
+            Here's an image of my baby ❤️
+          </Text>
+          <Image
+            mx='auto'
+            p='1'
+            objectFit='cover'
+            display='block'
+            boxSize={['80px', '100px']}
+            src={bibiImg}
+            alt='Picture of my yorkie'
+            borderRadius='50em'
+            border='2px solid'
+            borderColor='orange.100'
+          />
         </Box>
       </SlideFade>
     </Container>
