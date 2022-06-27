@@ -11,7 +11,7 @@ const Carousel = ({ slides }) => {
     w: 'auto',
     mt: '-22px',
     p: '16px',
-    color: 'white',
+    color: 'orange.400',
     fontWeight: 'bold',
     fontSize: '18px',
     transition: '0.6s ease',
