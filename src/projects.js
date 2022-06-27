@@ -32,6 +32,17 @@ const projects = [
     src: 'https://github.com/PomPoko-lab/lost-ark-tools',
     demo: 'https://pompoko.io/lost-ark-tools/',
   },
+  {
+    id: 4,
+    title: 'Recipe Journal App UPCOMING',
+    desc: 'An app written to track recipes from family and friends. The app will feature adding new recipes and fetching recipes from APIs.',
+    imgSrc: '/assets/projectUpcoming.jpg',
+    designer: 'Pom Poko',
+    coder: 'Pom Poko',
+    techs: ['HTML', 'CSS', 'JS', 'React', 'ChakraUI', 'ChocUI', 'Firebase'],
+    src: '#',
+    demo: '#',
+  },
 ];
 
 export default projects;

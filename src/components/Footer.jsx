@@ -18,7 +18,6 @@ const Footer = () => {
       flexDirection={['column', null, 'row']}
       alignItems='center'
       maxW='container.md'
-      gap='3'
     >
       <Center gap={['2', '3', '6', '10']} me={['0', null, 'auto']}>
         <Link>
