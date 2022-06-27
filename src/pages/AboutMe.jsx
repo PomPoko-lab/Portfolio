@@ -12,8 +12,8 @@ import {
 
 import { AiOutlineFilePdf } from 'react-icons/ai';
 
-import myImg from '../assets/MeCropped.jpg';
-import bibiImg from '../assets/Bibi.jpg';
+import myImg from '../assets/MeCropped.webp';
+import bibiImg from '../assets/Bibi.webp';
 
 const AboutMe = () => {
   return (
@@ -79,8 +79,8 @@ const AboutMe = () => {
           </Text>
           <Text mb='2'>For more information, have a look at my resume (:</Text>
           <Link
-            href={`${process.env.PUBLIC_URL}/assets/Kenny_Cao_ResumeUpdated06-26-22.pdf`}
-            download
+            href='https://drive.google.com/file/d/14HZSsQB70lHYYS1b3xi9b1Tse_VVTdX5/view?usp=sharing'
+            isExternal
             style={{ textDecoration: 'none' }}
           >
             <Center
@@ -107,7 +107,7 @@ const AboutMe = () => {
             </Center>
           </Link>
           <Box as='article' display={['none', null, 'block']}>
-            <Text textAlign='center' fontWeight='bold' fontsize='md' mb='3'>
+            <Text textAlign='center' fontWeight='bold' fontSize='md' mb='3'>
               Here's an image of my baby ❤️
             </Text>
             <Image

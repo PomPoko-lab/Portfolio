@@ -33,7 +33,6 @@ const Projects = () => {
           </Heading>
         </Box>
         <SlideFade
-          style={{ marginTop: '3em' }}
           in
           offsetY='-15px'
           transition={{ enter: { duration: 0.5, delay: 0.4 } }}

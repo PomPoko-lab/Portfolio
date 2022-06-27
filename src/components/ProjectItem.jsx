@@ -48,8 +48,9 @@ const ProjectItem = ({ project }) => {
           </Box>
         </Box>
         <Box display='flex' gap='2' mb='3' flexWrap='wrap'>
-          {project.techs.map((item) => (
+          {project.techs.map((item, index) => (
             <Text
+              key={`id-${index}`}
               color='whiteAlpha.800'
               background='orange.300'
               borderRadius='lg'

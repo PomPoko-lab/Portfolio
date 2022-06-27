@@ -7,9 +7,11 @@ import {
   Image,
 } from '@chakra-ui/react';
 
-import pomImg from '../assets/RosePomMain.jpg';
+import { Link as routerLink } from 'react-router-dom';
 
-const MainNav = ({ setCurrentPage }) => {
+import pomImg from '../assets/RosePomMain.webp';
+
+const MainNav = () => {
   return (
     <Container as='nav' maxW='container.xl' mt='5'>
       <SlideFade
@@ -28,24 +30,24 @@ const MainNav = ({ setCurrentPage }) => {
           fontSize='lg'
         >
           <ListItem me='auto'>
-            <Image
-              my='auto'
-              p='1px'
-              objectFit='cover'
-              boxSize='50px'
-              src={pomImg}
-              alt='Pom Poko Ava'
-              borderRadius='50em'
-              border='2px solid'
-              borderColor='orange.100'
-              onClick={() => {
-                setCurrentPage('Home');
-              }}
-              _hover={{ cursor: 'pointer' }}
-            />
+            <Link as={routerLink} to='/' _hover={{ cursor: 'pointer' }}>
+              <Image
+                my='auto'
+                p='1px'
+                objectFit='cover'
+                boxSize='50px'
+                src={pomImg}
+                alt='Pom Poko Ava'
+                borderRadius='50em'
+                border='2px solid'
+                borderColor='orange.100'
+              />
+            </Link>
           </ListItem>
           <ListItem>
             <Link
+              as={routerLink}
+              to='/about'
               transition='all 200ms ease'
               px={['2', '6']}
               py={['1', '3']}
@@ -56,15 +58,14 @@ const MainNav = ({ setCurrentPage }) => {
                   'linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.5))',
               }}
               style={{ textDecoration: 'none' }}
-              onClick={() => {
-                setCurrentPage('AboutMe');
-              }}
             >
               About
             </Link>
           </ListItem>
           <ListItem>
             <Link
+              as={routerLink}
+              to='/projects'
               transition='all 200ms ease'
               px={['2', '6']}
               py={['1', '3']}
@@ -75,9 +76,6 @@ const MainNav = ({ setCurrentPage }) => {
                   'linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.5))',
               }}
               style={{ textDecoration: 'none' }}
-              onClick={() => {
-                setCurrentPage('Projects');
-              }}
             >
               Projects
             </Link>
