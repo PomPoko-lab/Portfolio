@@ -21,6 +21,7 @@ const ProjectItem = ({ project }) => {
         objectFit='cover'
         objectPosition='center'
         src={`${process.env.PUBLIC_URL}${project.imgSrc}`}
+        loading='lazy'
       />
       <Box
         as='section'

@@ -43,6 +43,7 @@ const AboutMe = () => {
             borderRadius='50em'
             border='2px solid'
             borderColor='orange.100'
+            loading='lazy'
           />
 
           <Heading
@@ -122,6 +123,7 @@ const AboutMe = () => {
               borderRadius='50em'
               border='2px solid'
               borderColor='orange.100'
+              loading='lazy'
             />
             <Text fontStyle='italic' color='gray.500'>
               Fun Fact: Bibi, my baby yorkie, inspired the name of my business.

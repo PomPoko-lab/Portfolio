@@ -41,6 +41,7 @@ const MainNav = () => {
                 borderRadius='50em'
                 border='2px solid'
                 borderColor='orange.100'
+                loading='lazy'
               />
             </Link>
           </ListItem>
