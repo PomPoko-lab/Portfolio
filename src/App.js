@@ -47,7 +47,6 @@ function App() {
           src={mobileBG}
           srcSet={`${mobileBG} 400w, ${desktopBG} 2000w`}
           alt='beautiful blue skies'
-          loading='lazy'
         />
         <MainNav />
         <Suspense
