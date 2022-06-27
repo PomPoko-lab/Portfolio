@@ -106,26 +106,27 @@ const AboutMe = () => {
               <Text>Resume</Text>
             </Center>
           </Link>
-
-          <Text textAlign='center' fontWeight='bold' fontsize='md' mb='3'>
-            Here's an image of my baby ❤️
-          </Text>
-          <Image
-            mx='auto'
-            mb='2'
-            p='1'
-            objectFit='cover'
-            display='block'
-            boxSize={['80px', '100px']}
-            src={bibiImg}
-            alt='Picture of my yorkie'
-            borderRadius='50em'
-            border='2px solid'
-            borderColor='orange.100'
-          />
-          <Text fontStyle='italic' color='gray.500'>
-            Fun Fact: Bibi, my baby yorkie, inspired the name of my business.
-          </Text>
+          <Box as='article' display={['none', null, 'block']}>
+            <Text textAlign='center' fontWeight='bold' fontsize='md' mb='3'>
+              Here's an image of my baby ❤️
+            </Text>
+            <Image
+              mx='auto'
+              mb='2'
+              p='1'
+              objectFit='cover'
+              display='block'
+              boxSize={['80px', '100px']}
+              src={bibiImg}
+              alt='Picture of my yorkie'
+              borderRadius='50em'
+              border='2px solid'
+              borderColor='orange.100'
+            />
+            <Text fontStyle='italic' color='gray.500'>
+              Fun Fact: Bibi, my baby yorkie, inspired the name of my business.
+            </Text>
+          </Box>
         </Box>
       </SlideFade>
     </Container>
