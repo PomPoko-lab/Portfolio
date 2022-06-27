@@ -111,6 +111,7 @@ const AboutMe = () => {
           </Text>
           <Image
             mx='auto'
+            mb='2'
             p='1'
             objectFit='cover'
             display='block'
@@ -121,6 +122,9 @@ const AboutMe = () => {
             border='2px solid'
             borderColor='orange.100'
           />
+          <Text fontStyle='italic' color='gray.500'>
+            Fun Fact: Bibi, my baby yorkie, inspired the name of my business.
+          </Text>
         </Box>
       </SlideFade>
     </Container>

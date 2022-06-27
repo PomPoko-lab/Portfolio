@@ -1,11 +1,15 @@
 import { Container, Box, Heading, SlideFade } from '@chakra-ui/react';
 import projects from '../projects';
-
-import ProjectItem from '../components/ProjectItem';
+import Carousel from '../components/Carousel';
 
 const Projects = () => {
   return (
-    <Container as='section' textAlign='center' maxW='container.lg'>
+    <Container
+      as='section'
+      textAlign='center'
+      maxW='container.lg'
+      p={['0', null, 'auto']}
+    >
       <SlideFade
         style={{ marginTop: '3em' }}
         in
@@ -23,11 +27,15 @@ const Projects = () => {
             Featured Projects
           </Heading>
         </Box>
-        <Box display='flex' gap='5' justifyContent='center' flexWrap='wrap'>
-          {projects.map((item) => (
-            <ProjectItem key={item.id} project={item} />
-          ))}
-        </Box>
+        <SlideFade
+          style={{ marginTop: '3em' }}
+          in
+          offsetY='-15px'
+          transition={{ enter: { duration: 0.5, delay: 0.4 } }}
+          unmountOnExit
+        >
+          <Carousel slides={projects} />
+        </SlideFade>
       </SlideFade>
     </Container>
   );
