@@ -48,7 +48,7 @@ const MainNav = () => {
           <ListItem>
             <Link
               as={routerLink}
-              to='/about'
+              to='about'
               transition='all 200ms ease'
               px={['2', '6']}
               py={['1', '3']}
@@ -66,7 +66,7 @@ const MainNav = () => {
           <ListItem>
             <Link
               as={routerLink}
-              to='/projects'
+              to='projects'
               transition='all 200ms ease'
               px={['2', '6']}
               py={['1', '3']}

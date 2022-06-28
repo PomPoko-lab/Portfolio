@@ -64,8 +64,8 @@ function App() {
         >
           <Routes>
             <Route path='/' element={<Home initAnimation={initAnimation} />} />
-            <Route path='/about' element={<AboutMe />} />
-            <Route path='/projects' element={<Projects />} />
+            <Route path='about' element={<AboutMe />} />
+            <Route path='projects' element={<Projects />} />
           </Routes>
         </Suspense>
         <Footer />

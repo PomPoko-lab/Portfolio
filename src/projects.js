@@ -34,8 +34,8 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Recipe Journal App UPCOMING',
-    desc: 'An app written to track recipes from family and friends. The app will feature adding new recipes and fetching recipes from APIs.',
+    title: 'Bite Diary *UPCOMING',
+    desc: 'A recipe journal app written to track recipes from family and friends. The app will feature adding new recipes and fetching recipes from APIs.',
     imgSrc: '/assets/projectUpcoming.jpg',
     designer: 'Pom Poko',
     coder: 'Pom Poko',
