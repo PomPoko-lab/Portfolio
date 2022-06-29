@@ -1,6 +1,6 @@
 {
   "name": "pom-poko-one",
-  "homepage": ".",
+  "homepage": "https://www.pompoko.io/",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
