@@ -17,24 +17,45 @@ const AboutMe = lazy(() => import('./pages/AboutMe'));
 
 function App() {
   const [initAnimation, setInitAnimation] = useState(false);
+  const [windowSize, setWindowSize] = useState({
+    height: `${window.innerHeight}px`,
+    width: `${window.innerWidth}px`,
+  });
 
+  // Resizes window on user resize
   useEffect(() => {
-    setTimeout(() => {
+    const resizeWindow = () => {
+      setWindowSize({
+        height: `${window.innerHeight}px`,
+        width: `${window.innerWidth}px`,
+      });
+    };
+
+    window.addEventListener('resize', resizeWindow);
+    return () => {
+      window.removeEventListener('resize', resizeWindow);
+    };
+  }, []);
+
+  // Adds a delay to initial transitions (first load)
+  useEffect(() => {
+    const animationdelay = setTimeout(() => {
       setInitAnimation(true);
     }, 1000);
+
+    return () => clearTimeout(animationdelay);
   }, []);
 
   return (
     <>
-      <BackgroundBox />
       <Box
-        h={`${window.innerHeight}px`}
+        h={`${windowSize.height}`}
         display='flex'
         flexDirection='column'
         alignItems='center'
         px='4'
-        overflow='scroll'
       >
+        <BackgroundBox />
         <Image
           zIndex='-1'
           position='fixed'

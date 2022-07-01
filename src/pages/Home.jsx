@@ -23,8 +23,8 @@ const MyInfo = ({ initAnimation }) => {
         <Container
           as='main'
           p='6'
-          mt={['14em', '17em']}
-          mb='4em'
+          mt={['6em', null, '10em', '17em']}
+          mb={['5vh', '10vh']}
           display='flex'
           flexDirection='column'
           textAlign='center'
