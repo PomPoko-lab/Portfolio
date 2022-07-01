@@ -2,7 +2,6 @@ import { Container, Box, Text, Link, Center, Icon } from '@chakra-ui/react';
 
 import {
   AiOutlineLinkedin,
-  AiOutlineFacebook,
   AiOutlineGithub,
   AiOutlineMail,
   AiOutlineCopyrightCircle,
@@ -19,12 +18,9 @@ const Footer = () => {
       alignItems='center'
       maxW='container.md'
     >
-      <Center as='section' gap={['2', '3', '6', '10']} me={['0', null, 'auto']}>
-        <Link isExternal href='#'>
+      <Center as='section' gap={['2', '3', '4']} me={['0', null, 'auto']}>
+        <Link isExternal href='https://www.linkedin.com/in/kenny-c-8aa364236/'>
           <Icon as={AiOutlineLinkedin} boxSize='30px' color='teal.100' />
-        </Link>
-        <Link isExternal href='#'>
-          <Icon as={AiOutlineFacebook} boxSize='30px' color='teal.100' />
         </Link>
         <Link isExternal href='https://github.com/PomPoko-lab'>
           <Icon as={AiOutlineGithub} boxSize='30px' color='teal.100' />

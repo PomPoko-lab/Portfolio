@@ -33,7 +33,7 @@ function App() {
         flexDirection='column'
         alignItems='center'
         px='4'
-        overflow='hidden'
+        overflow='scroll'
       >
         <Image
           zIndex='-1'
