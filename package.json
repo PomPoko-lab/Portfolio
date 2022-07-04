@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && compress-cra",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -46,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "compress-create-react-app": "^1.2.1",
     "gh-pages": "^4.0.0"
   }
 }

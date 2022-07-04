@@ -1,5 +1,24 @@
 const projects = [
   {
+    id: 4,
+    title: 'Bite Diary',
+    desc: 'A recipe diary designed to record family and friend recipes, mostly family delicacies. Recipes may be created, updated, and deleted from the app.',
+    imgSrc: '/assets/bite-diary-homepage.webp',
+    designer: 'Pom Poko',
+    coder: 'Pom Poko',
+    techs: [
+      'HTML',
+      'CSS',
+      'JS',
+      'React',
+      'ChakraUI',
+      'React Router',
+      'Firebase',
+    ],
+    src: 'https://github.com/PomPoko-lab/bite-diary',
+    demo: 'https://recipes.pompoko.io/',
+  },
+  {
     id: 1,
     title: 'FFXIV Restaurant Page',
     desc: "An intro to React project made for my guild on Final Fantasy XIV. The project features a restaurant web page playing off of the guild's theme.",
@@ -31,17 +50,6 @@ const projects = [
     techs: ['HTML', 'CSS', 'JS'],
     src: 'https://github.com/PomPoko-lab/lost-ark-tools',
     demo: 'https://pompoko.io/lost-ark-tools/',
-  },
-  {
-    id: 4,
-    title: 'Bite Diary *UPCOMING',
-    desc: 'A recipe journal app written to track recipes from family and friends. The app will feature adding new recipes and fetching recipes from APIs.',
-    imgSrc: '/assets/projectUpcoming.jpg',
-    designer: 'Pom Poko',
-    coder: 'Pom Poko',
-    techs: ['HTML', 'CSS', 'JS', 'React', 'ChakraUI', 'ChocUI', 'Firebase'],
-    src: '#',
-    demo: '#',
   },
 ];
 
