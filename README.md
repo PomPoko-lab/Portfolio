@@ -27,7 +27,7 @@ In progress..
 
 ### Website Homepage
 
-![Website Homepage Image](./github/Homepage.webp)
+![Website Homepage Image](./public/assets/portfolio-page.jpg)
 
 ## Project Roadmap
 
