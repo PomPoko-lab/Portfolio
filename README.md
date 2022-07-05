@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Portfolio - Pom Pom One
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my portfolio, which focuses on showing both myself and my projects.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+### Project Status
 
-### `npm start`
+Project is currently marked as completed.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Links
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Github Repo](https://github.com/PomPoko-lab/bite-diary 'Portfolio Repo')
 
-### `npm test`
+- [Live](https://www.pompoko.io 'Live View')
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Features
 
-### `npm run build`
+- Single Page Portfolio
+- An email link
+- Downloadable Resume
+- Carousel of projects
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In progress..
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Website Homepage
 
-### `npm run eject`
+![Website Homepage Image](./github/Homepage.webp)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Roadmap
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [x] Home page
+- [x] About me
+- [x] Carousel of projects
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Built with
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- ReactJS
+- ChakraUI
+- React Router
 
-## Learn More
+## Purpose of this project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+I wanted a site where I could show off the work I've done and the accomplishments I'm most proud of. This portfolio provides a snapshot of my current development abilities.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Experiences gained from this project
 
-### Code Splitting
+- Window resizing capabilities
+- Mobile-first design
+- React router basics
+- Image compression and the use of next-generation image formats, such as webp
+- Lazy loading in React
+- Design and functionality of a carousel
+- Using links as externals and downloads
+- Transitions in CSS
+- Adding images from the public url
+- Apex custom domain usage implementation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contact
 
-### Analyzing the Bundle Size
+- [Github Profile](https://github.com/PomPoko-lab 'PomPoko-lab')
+- [Email](mailto:hello@pompoko.io 'My Email')
+- [Portfolio/Website](https://pompoko.io/ 'Portfolio')
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
+Copyright &copy; 2022, CraftyBi.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgments
 
-### Advanced Configuration
+In progress..
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Support
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please give a star️ if you like this project!
