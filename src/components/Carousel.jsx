@@ -43,7 +43,7 @@ const Carousel = ({ slides }) => {
   };
   return (
     <Flex as='section' w='100%' alignItems='center' justifyContent='center'>
-      <Flex w={['300px', null, null, '850px']} overflow='hidden' pos='relative'>
+      <Flex w={['250px', null, null, '850px']} overflow='hidden' pos='relative'>
         <Flex {...carouselStyle}>
           {slides.map((item) => (
             <ProjectItem key={item.id} project={item} />

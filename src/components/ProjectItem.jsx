@@ -12,7 +12,8 @@ const ProjectItem = ({ project }) => {
       borderRadius='md'
       display='flex'
       flexDirection={['column', null, null, 'row-reverse']}
-      w={['300px', null, null, '850px']}
+      w={['250px', null, null, '850px']}
+      h={['600px', null, null, 'auto']}
       textAlign='left'
       overflow='hidden'
     >
