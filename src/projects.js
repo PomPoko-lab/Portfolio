@@ -28,7 +28,7 @@ const projects = [
     imgSrc: '/assets/restaurant-page.jpg',
     designer: 'Pom Poko',
     coder: 'Pom Poko',
-    techs: ['HTML', 'CSS', 'JavaScript', 'React'],
+    techs: ['HTML', 'CSS', 'JavaScript', 'ReactJS'],
     src: 'https://github.com/PomPoko-lab/restaurant-page',
     demo: 'https://pompoko.io/restaurant-page/',
   },
