@@ -1,4 +1,4 @@
-# Portfolio - Pom Pom One
+# Portfolio - Pom Poko One
 
 This is my portfolio, which focuses on showing both myself and my projects.
 
