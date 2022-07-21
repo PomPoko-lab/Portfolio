@@ -18,6 +18,7 @@ const ProjectItem = ({ project }) => {
     >
       <Image
         w='500px'
+        h='370px'
         objectFit='cover'
         objectPosition='center'
         src={`${process.env.PUBLIC_URL}${project.imgSrc}`}
