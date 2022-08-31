@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.9cccf77d.css",
-    "main.js": "/static/js/main.2e80139b.js",
+    "main.js": "/static/js/main.faeccef2.js",
     "static/js/15.ae3f4cc8.chunk.js": "/static/js/15.ae3f4cc8.chunk.js",
-    "static/js/263.9aa25263.chunk.js": "/static/js/263.9aa25263.chunk.js",
+    "static/js/263.379dcb5d.chunk.js": "/static/js/263.379dcb5d.chunk.js",
     "static/media/desktopBG.webp": "/static/media/desktopBG.e100c4808d4ada4393b6.webp",
     "static/media/lato-all-400-normal.woff": "/static/media/lato-all-400-normal.3dc1eff492ab1f598560.woff",
     "static/media/lato-latin-400-normal.woff2": "/static/media/lato-latin-400-normal.be36596da218e1eec01c.woff2",
@@ -14,12 +14,12 @@
     "static/media/RosePomMain.webp": "/static/media/RosePomMain.f347fc4a6fd3858f1a98.webp",
     "index.html": "/index.html",
     "main.9cccf77d.css.map": "/static/css/main.9cccf77d.css.map",
-    "main.2e80139b.js.map": "/static/js/main.2e80139b.js.map",
+    "main.faeccef2.js.map": "/static/js/main.faeccef2.js.map",
     "15.ae3f4cc8.chunk.js.map": "/static/js/15.ae3f4cc8.chunk.js.map",
-    "263.9aa25263.chunk.js.map": "/static/js/263.9aa25263.chunk.js.map"
+    "263.379dcb5d.chunk.js.map": "/static/js/263.379dcb5d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9cccf77d.css",
-    "static/js/main.2e80139b.js"
+    "static/js/main.faeccef2.js"
   ]
 }
