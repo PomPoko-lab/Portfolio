@@ -80,7 +80,7 @@ const AboutMe = () => {
           </Text>
           <Text mb='2'>For more information, have a look at my resume (:</Text>
           <Link
-            href='https://drive.google.com/file/d/16E6M6mk4ab-4taulM1vH6QF5RpX2347V/view?usp=sharing'
+            href='https://drive.google.com/file/d/1V9TLGYs0KlzkNKVVZUZFZ2YNryZmOVlv/view?usp=sharing'
             isExternal
             style={{ textDecoration: 'none' }}
           >
